@@ -15,7 +15,6 @@
           </p>
           <div class="text-center mt-10">
             <a
-              type="button"
               href="mailto:jaralato@gmail.com"
               class="inline-flex items-center px-6 py-3 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
