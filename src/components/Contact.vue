@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="w-full py-32 lg:py-64" id="contact">
+    <section class="w-full py-32" id="contact">
       <div class="container mx-auto">
         <div class="text-center max-w-xs md:max-w-2xl mx-auto">
           <h2
