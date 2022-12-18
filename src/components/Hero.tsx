@@ -1,8 +1,8 @@
 import { trpc } from "../utils/trpc";
 import Countdown from "react-countdown";
-import VisibilitySensor from "react-visibility-sensor";
 import { useAtom } from "jotai";
 import { tabAtom } from "../atoms";
+import VisibilitySensor from "react-visibility-sensor";
 
 const Hero: React.FC = () => {
   const launch = trpc.launch.getNextLaunch.useQuery();
@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
   }
   return (
     <>
-      <VisibilitySensor onChange={onChange}>
+      <VisibilitySensor onChange={onChange} offset={30}>
         <div
           className="mx-auto flex min-h-screen max-w-xs flex-col justify-center gap-12 px-4 py-16 text-center md:max-w-lg md:text-left lg:container  lg:pr-64"
           id="Hero"

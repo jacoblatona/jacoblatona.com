@@ -1,7 +1,7 @@
 import { useAtom } from "jotai";
 import { tabAtom } from "../atoms";
 
-const items: Array<string> = ["Hero", "Projects", "Contact"];
+const items: Array<string> = ["Hero", "Projects", "Journey", "Contact"];
 
 const NavDots: React.FC = () => {
   const [tab, setTab] = useAtom(tabAtom);

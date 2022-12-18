@@ -1,6 +1,6 @@
-import VisibilitySensor from "react-visibility-sensor";
 import { useAtom } from "jotai";
 import { tabAtom } from "../atoms";
+import VisibilitySensor from "react-visibility-sensor";
 
 type Project = {
   name: string;
@@ -63,30 +63,32 @@ const projects = [
 const Projects: React.FC = () => {
   const [, setTab] = useAtom(tabAtom);
 
-  const onChange = (isVisible: boolean) => {
+  function onChange(isVisible: boolean) {
     if (isVisible) setTab("Projects");
-  };
+  }
   return (
     <>
-      <VisibilitySensor onChange={onChange}>
-        <div
-          className="mx-auto flex min-h-screen max-w-xs flex-col  justify-center gap-10 px-4  py-16 text-center md:max-w-lg  md:text-left lg:container lg:pr-32"
-          id="Projects"
-        >
-          <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-            Universe, Meet Dent.
-          </h1>
-          <p className="text-lg text-white lg:text-2xl">
-            Below you can find some recent stuff I have built and/or worked on
-            to leave my little dent in the universe.
-          </p>
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 lg:pr-32">
-            {projects.map((project: Project) => (
-              <Project key={project.name} project={project} />
-            ))}
-          </div>
+      <div
+        className="mx-auto flex min-h-screen max-w-xs flex-col  justify-center gap-10 px-4  py-16 text-center md:max-w-lg  md:text-left lg:container lg:pr-32"
+        id="Projects"
+      >
+        <VisibilitySensor onChange={onChange}>
+          <span>&nbsp;</span>
+        </VisibilitySensor>
+        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
+          Universe, Meet Dent.
+        </h1>
+        <p className="text-lg text-white lg:text-2xl">
+          Below you can find some recent stuff I have built and/or worked on to
+          leave my little dent in the universe.
+        </p>
+
+        <div className="mt-8 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 lg:pr-32">
+          {projects.map((project: Project) => (
+            <Project key={project.name} project={project} />
+          ))}
         </div>
-      </VisibilitySensor>
+      </div>
     </>
   );
 };
@@ -100,7 +102,7 @@ type ProjectProps = {
 const Project: React.FC<ProjectProps> = ({ project }: ProjectProps) => {
   return (
     <>
-      <div className="flex cursor-pointer flex-col rounded-xl px-5 py-8 hover:bg-white/10">
+      <div className="flex cursor-pointer flex-col rounded-xl bg-white/10 px-5 py-8 hover:bg-white/10 lg:bg-transparent">
         <img
           src={project.image}
           className="mx-auto h-10 w-10 rounded-full md:m-0"

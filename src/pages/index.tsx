@@ -4,6 +4,7 @@ import NavDots from "../components/NavDots";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import Journey from "../components/Journey";
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       <main className="flex min-h-screen flex-col bg-gradient-to-b from-[#2e026d] to-[#15162c]">
         <Hero />
         <Projects />
+        <Journey />
         <Contact />
       </main>
       <NavDots />
