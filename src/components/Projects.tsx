@@ -69,24 +69,26 @@ const Projects: React.FC = () => {
   return (
     <>
       <div
-        className="mx-auto flex min-h-screen max-w-xs flex-col  justify-center gap-10 px-4  py-16 text-center md:max-w-lg  md:text-left lg:container lg:pr-32"
+        className="mx-auto flex min-h-screen max-w-xs flex-col  justify-center px-4  py-16 text-center md:max-w-lg  md:text-left lg:container lg:pr-32"
         id="Projects"
       >
         <VisibilitySensor onChange={onChange}>
           <span>&nbsp;</span>
         </VisibilitySensor>
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          Universe, Meet Dent.
-        </h1>
-        <p className="text-lg text-white lg:text-2xl">
-          Below you can find some recent stuff I have built and/or worked on to
-          leave my little dent in the universe.
-        </p>
+        <div className="flex flex-col gap-10">
+          <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
+            Universe, Meet Dent.
+          </h1>
+          <p className="text-lg text-white lg:text-2xl">
+            Below you can find some recent stuff I have built and/or worked on
+            to leave my little dent in the universe.
+          </p>
 
-        <div className="mt-8 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 lg:pr-32">
-          {projects.map((project: Project) => (
-            <Project key={project.name} project={project} />
-          ))}
+          <div className="mt-8 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 lg:pr-32">
+            {projects.map((project: Project) => (
+              <Project key={project.name} project={project} />
+            ))}
+          </div>
         </div>
       </div>
     </>
