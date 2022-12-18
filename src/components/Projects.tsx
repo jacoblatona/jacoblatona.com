@@ -15,7 +15,7 @@ const projects = [
     name: "KardXP",
     image: "/images/kardxp.png",
     description:
-      "Creating technology to empower civilians to explore space on their own terms.",
+      "KardXP is a platform where you can generate dynamic QR codes linked to printables.",
     url: "https://kardxp.com",
     urlName: "kardxp.com",
   },
@@ -23,40 +23,39 @@ const projects = [
     name: "Bytz",
     image: "/images/bytz.jpg",
     description:
-      "Creating technology to empower civilians to explore space on their own terms.",
-    url: "https://kardxp.com",
+      "BYTZ is an open-source decentralized peer-to-peer currency featuring a Delegated Proof of Stake algorithm.",
+    url: "https://bytz.gg",
     urlName: "bytz.gg",
   },
   {
     name: "Binge",
     image: "/images/binge.jpg",
     description:
-      "Creating technology to empower civilians to explore space on their own terms.",
-    url: "https://kardxp.com",
+      "Binge is an immersive streaming platform created for the gaming universe.",
+    url: "https://binge.com",
     urlName: "binge.com",
   },
   {
     name: "Levels Guild",
     image: "/images/levels.jpg",
-    description:
-      "Creating technology to empower civilians to explore space on their own terms.",
-    url: "https://kardxp.com",
+    description: "Levels is a leading World of Warcraft Guild and Stream Team.",
+    url: "https://levels.gg",
     urlName: "levels.gg",
   },
   {
     name: "Xposed TV",
     image: "/images/xposed.png",
     description:
-      "Creating technology to empower civilians to explore space on their own terms.",
-    url: "https://kardxp.com",
+      "Xposed.tv is a content-hub for massively popular live streamer Xposed.",
+    url: "https://xposed.tv",
     urlName: "xposed.tv",
   },
   {
     name: "R19",
     image: "/images/r19.jpg",
     description:
-      "Creating technology to empower civilians to explore space on their own terms.",
-    url: "https://kardxp.com",
+      "R19.gg is a website housing esports tips/predictions/news and more.",
+    url: "https://r19.gg",
     urlName: "r19.gg",
   },
 ];

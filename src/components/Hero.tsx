@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
               <span className="text-[hsl(280,100%,70%)]">
                 T-
                 {launch.data && (
-                  <Countdown date={launch.data?.launches?.result[0].win_open} />
+                  <Countdown date={launch.data?.launches.launches[0].net} />
                 )}
               </span>
             </p>
