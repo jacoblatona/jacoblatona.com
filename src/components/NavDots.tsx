@@ -17,7 +17,7 @@ const NavDots: React.FC = () => {
   return (
     <>
       <div
-        className=" fixed inset-y-0 right-10 flex flex-col justify-center gap-4"
+        className=" fixed inset-y-0 right-10 hidden flex-col justify-center gap-4 md:flex"
         id="Hero"
       >
         {items.map((item: string, index) => (

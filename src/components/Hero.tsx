@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
   }
   return (
     <>
-      <VisibilitySensor onChange={onChange} offset={30}>
+      <VisibilitySensor onChange={onChange}>
         <div
           className="mx-auto flex min-h-screen max-w-xs flex-col justify-center gap-12 px-4 py-16 text-center md:max-w-lg md:text-left lg:container  lg:pr-64"
           id="Hero"

@@ -58,7 +58,7 @@ const Journey: React.FC = () => {
 
           <div className=" mt-14 grid grid-cols-1 space-y-20 lg:grid-cols-4 lg:space-y-0 lg:pr-20">
             {items.map((item: Item) => (
-              <div className="flex flex-col">
+              <div key={item.company} className="flex flex-col">
                 <div className="flex items-center">
                   <div className="z-10 mx-auto flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-pink-200 ring-0 ring-white/10 sm:ring-8 lg:m-0">
                     <svg
