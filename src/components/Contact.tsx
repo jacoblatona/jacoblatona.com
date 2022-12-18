@@ -43,10 +43,10 @@ const Contact: React.FC = () => {
               </svg>
 
               <a
-                href="mailto:hi@jacoblatona.com"
+                href="mailto:hello@jacoblatona.com"
                 className="flex items-center text-2xl"
               >
-                hi@jacoblatona.com
+                hello@jacoblatona.com
               </a>
             </div>
             <div className="flex items-center justify-center gap-5 text-[hsl(280,100%,70%)] lg:justify-start">
