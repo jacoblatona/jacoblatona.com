@@ -43,12 +43,12 @@ const projects = [
     urlName: "levels.gg",
   },
   {
-    name: "Xposed TV",
-    image: "/images/xposed.png",
+    name: "NAFEA",
+    image: "/images/nafea.png",
     description:
-      "Xposed.tv is a content-hub for massively popular live streamer Xposed.",
-    url: "https://xposed.tv",
-    urlName: "xposed.tv",
+      "NAFEA is a platform connecting highscool esports athletes to collegiate sponsorship opportunities.",
+    url: "https://nafea.org",
+    urlName: "nafea.org",
   },
   {
     name: "R19",
