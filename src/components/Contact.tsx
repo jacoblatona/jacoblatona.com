@@ -14,15 +14,16 @@ const Contact: React.FC = () => {
         className="container mx-auto flex min-h-screen flex-col justify-center gap-12 px-4 py-16  text-center lg:pr-64 lg:text-left"
         id="Contact"
       >
+        <VisibilitySensor onChange={onChange}>
+          <span>&nbsp;</span>
+        </VisibilitySensor>
         <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
           Get in Touch.
         </h1>
         <p className="text-2xl text-white">
           Feel free to shoot me an email anytime!
         </p>
-        <VisibilitySensor onChange={onChange}>
-          <span>&nbsp;</span>
-        </VisibilitySensor>
+
         <div className="flex items-center justify-center gap-5 text-[hsl(280,100%,70%)] lg:justify-start">
           <svg
             xmlns="http://www.w3.org/2000/svg"

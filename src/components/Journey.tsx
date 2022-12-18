@@ -48,13 +48,14 @@ const Journey: React.FC = () => {
         className="container mx-auto flex min-h-screen flex-col justify-center gap-12 px-4 py-16  text-center lg:pr-64 lg:text-left"
         id="Journey"
       >
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          My Career Journey so far.
-        </h1>
         <VisibilitySensor onChange={onChange}>
           <span>&nbsp;</span>
         </VisibilitySensor>
-        <div className="mt-14 grid grid-cols-1 space-y-20 lg:grid-cols-4 lg:space-y-0 lg:pr-20">
+        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
+          My Career Journey so far.
+        </h1>
+
+        <div className=" mt-14 grid grid-cols-1 space-y-20 lg:grid-cols-4 lg:space-y-0 lg:pr-20">
           {items.map((item: Item) => (
             <div className="flex flex-col">
               <div className="flex items-center">
